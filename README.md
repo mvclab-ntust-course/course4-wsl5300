@@ -18,7 +18,7 @@
 
   
 ### 實作方式-CLI
-* `yolo predict model=yolov8n-seg.pt source='/Users/wsl/work/mvc/week4/argoverse.mp4' imgsz=320 **classes=2**`
+* `yolo predict model=yolov8n-seg.pt source='/Users/wsl/work/mvc/week4/argoverse.mp4' imgsz=320 __classes=2__`
 * 第一次執行會載 `yolov8n-seg.pt`。
 * 產生的影片會在 `../runs/segment/predict/` 裡面。
 </br></br>
