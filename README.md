@@ -14,16 +14,17 @@
   * 根據規格裝PyTorch
   * 我是`pip3 install torch torchvision torchaudio`
 
-* 參考 [Ultralytics YOLOv8 Docs](https://docs.ultralytics.com/quickstart/#use-ultralytics-with-python）, 物件追蹤( classes[2] = 'car' ).
+* 參考 [Ultralytics YOLOv8 Docs](https://docs.ultralytics.com/quickstart/#use-ultralytics-with-python), 物件追蹤( classes[2] = 'car' ).
   
-  * CLI
-    * `yolo predict model=yolov8n-seg.pt source='/Users/wsl/work/mvc/week4/argoverse.mp4' imgsz=320 classes=2`
-    * 第一次執行會下載 `yolov8n-seg.pt`。
-    * 產生的影片會在 `../runs/segment/predict` 裡面。
+#### CLI的實作方式
+* `yolo predict model=yolov8n-seg.pt source='/Users/wsl/work/mvc/week4/argoverse.mp4' imgsz=320 classes=2`
+* 第一次執行會載 `yolov8n-seg.pt`。
+* 產生的影片會在 `../runs/segment/predict/` 裡面。
   
-  * Python
-    <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-20%20at%2017.47.10%402x.png" width=800 ></div>
-    * 產生的結果同CLI。
+#### Python的實作方式
+* yolov8_car.py
+<div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-20%20at%2017.47.10%402x.png" width=800 ></div>
+* 產生的結果同CLI。
   
 
 
