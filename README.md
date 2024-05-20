@@ -12,12 +12,12 @@
   cd ultralytics
   ```
   * 根據規格裝PyTorch
-  #### 我是`pip3 install torch torchvision torchaudio`
+  * 我是`pip3 install torch torchvision torchaudio`
 
-* 參考[Ultralytics YOLOv8 Docs](https://docs.ultralytics.com/quickstart/#use-ultralytics-with-python）, 物件追蹤( classes[2] = 'car' ).
+* 參考 [Ultralytics YOLOv8 Docs](https://docs.ultralytics.com/quickstart/#use-ultralytics-with-python）, 物件追蹤( classes[2] = 'car' ).
   
   * CLI
-    * (yo5) wsl@wslmac week4 % `yolo predict model=yolov8n-seg.pt source='/Users/wsl/work/mvc/week4/argoverse.mp4' imgsz=320 classes=2`
+    * `yolo predict model=yolov8n-seg.pt source='/Users/wsl/work/mvc/week4/argoverse.mp4' imgsz=320 classes=2`
     * 第一次執行會下載 `yolov8n-seg.pt`。
     * 產生的影片會在 `../runs/segment/predict` 裡面。
   
