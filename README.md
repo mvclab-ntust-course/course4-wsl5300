@@ -1,5 +1,8 @@
 # week4 : YOLOv8 Object Tracking (Cars) & Training
+
 ## (1/2) YOLOv8 Object Tracking (Cars)
+
+<div class="center"><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/ezgif-3-0c627c0921.gif" width=600 ></div>
 
 * 搜尋yolov8, git clone.
   <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-20%20at%2015.06.49%402x.png" width=800 ></div>
@@ -32,7 +35,7 @@
 
 ## (2/2) YOLOv8 Training
 
-### **Preparing Our Dataset**
+### Preparing Our Dataset
 
 * 在roboflow選擇關鍵字為“volleyball”的dataset。
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2004.51.20%402x.png" width=800 ></div>
@@ -46,7 +49,7 @@
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2004.56.47%402x.png" width=800 ></div>
 </br></br></br>
 
-### **Training**
+### Training
   
 * 貼上由roboflow載入dataset的程式碼片段 & training
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2004.59.50%402x.png" width=800 ></div>
@@ -56,18 +59,28 @@
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2005.02.01%402x.png" width=800 ></div>
 </br></br>
 
-* 確認test的準確率
+* test的準確率
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2005.03.00%402x.png" width=400 >
      <img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2005.03.23%402x.png" width=400 ></div>
 </br></br></br>
 
-### **Predict**
+### Predict 
 
-* 預測的圖片
+#### PNG
 
-* 預測的影片
+* 排球比賽中的截圖
+
+#### Video
+
+* 排球發球
 
 
+
+一開始我先用youtube找一段比賽影片，但發現正式比賽太多干擾的資訊，所以裁切邊框，但還是大部分都追蹤失敗。
+想說可能是其他顏色干擾，我再選了一段攝影機跟著球的片段，且除了球沒有其他大面積的黃色，但還是追蹤失敗。
+想說截圖丟進去看看，發現這種高速比賽我不管怎麼截圖，排球都會糊掉。
+改用一段精彩瞬間回放的影片，結果一開始很成功，後來球遠離攝影機以及球速變快的時候就追蹤不到了。
+結論：影片球速太快，排球太小 都會影響追蹤成功與否。
 
 
 
