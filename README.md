@@ -32,7 +32,7 @@
 
 ## (2/2) YOLOv8 Training
 
-### Preparing Our Dataset
+### **Preparing Our Dataset**
 
 * 在roboflow選擇關鍵字為“volleyball”的dataset。
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2004.51.20%402x.png" width=800 ></div>
@@ -46,7 +46,7 @@
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2004.56.47%402x.png" width=800 ></div>
 </br></br></br>
 
-### Training
+### **Training**
   
 * 貼上由roboflow載入dataset的程式碼片段 & training
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2004.59.50%402x.png" width=800 ></div>
@@ -61,7 +61,7 @@
      <img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2005.03.23%402x.png" width=400 ></div>
 </br></br></br>
 
-### Predict
+### **Predict**
 
 * 預測的圖片
 
