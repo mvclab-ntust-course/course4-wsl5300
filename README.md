@@ -1,13 +1,13 @@
 # week4 : YOLOv8 Object Tracking (Cars) & Training
-
+</br></br></br>
 ## (1/2) YOLOv8 Object Tracking (Cars)
 
 <div class="center"><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/ezgif-3-0c627c0921.gif" width=600 ></div>
 
-* 搜尋yolov8, git clone.
-  <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-20%20at%2015.06.49%402x.png" width=800 ></div>
+#### 參考 [Ultralytics YOLOv8 Docs](https://docs.ultralytics.com/quickstart/#use-ultralytics-with-python), 實作物件追蹤( classes[2] = 'car' ).
 
-* 參考 [Ultralytics YOLOv8 Docs](https://docs.ultralytics.com/quickstart/#use-ultralytics-with-python), 實作物件追蹤( classes[2] = 'car' ).
+<div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-20%20at%2015.06.49%402x.png" width=800 ></div>
+
 
 ### 創建環境 + 安裝package.
   ```
@@ -31,13 +31,13 @@
 </br>
 * 產生的結果同CLI。
 </br></br></br>
-
+</br></br></br>
 
 ## (2/2) YOLOv8 Training
 
 ### Preparing Our Dataset
 
-* 在roboflow選擇關鍵字為“volleyball”的dataset。
+* 在roboflow選擇關鍵字為`volleyball`的dataset。
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2004.51.20%402x.png" width=800 ></div>
 </br></br>
 
@@ -51,11 +51,11 @@
 
 ### Training
   
-* 貼上由roboflow載入dataset的程式碼片段 & training
+* 貼上由roboflow載入dataset的程式碼片段 & 執行
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2004.59.50%402x.png" width=800 ></div>
 </br></br>
 
-* 訓練完成 & 模型結果存於“”
+* 訓練完成 & 模型結果存於`/content/runs/detect/train/weights/best.pt`
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2005.02.01%402x.png" width=800 ></div>
 </br></br>
 
@@ -68,19 +68,31 @@
 
 #### PNG
 
-* 排球比賽中的截圖
+* 排球比賽中的截圖(照片可以成功追蹤)
+
+<div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/runs/detect/predict3/IMG_DC99C3FA3F11-1.jpeg" width=350 ></div>
+</br></br>
 
 #### Video
 
-* 排球發球
+* 發球
+
+<div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/ezgif-7-218a511bc4.gif" width=350 ></div>
+
+* 網前，近距離
+
+<div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/ezgif-3-4a4d719c9d.gif" width=800 ></div>
+
+
+</br></br></br></br></br></br>
 
 
 
-一開始我先用youtube找一段比賽影片，但發現正式比賽太多干擾的資訊，所以裁切邊框，但還是大部分都追蹤失敗。
-想說可能是其他顏色干擾，我再選了一段攝影機跟著球的片段，且除了球沒有其他大面積的黃色，但還是追蹤失敗。
-想說截圖丟進去看看，發現這種高速比賽我不管怎麼截圖，排球都會糊掉。
-改用一段精彩瞬間回放的影片，結果一開始很成功，後來球遠離攝影機以及球速變快的時候就追蹤不到了。
-結論：影片球速太快，排球太小 都會影響追蹤成功與否。
+一開始我先用youtube找一段比賽影片，但發現正式比賽太多干擾的資訊，所以裁切邊框，但還是追蹤失敗。
+想說可能是其他顏色干擾，再選了一段攝影機跟著球的片段，且除了球沒有其他大面積的黃色，也失敗。
+想說截圖丟進去看看，發現這種高速比賽我不管怎麼截圖，排球都會糊掉，可能是前面失敗的原因。
+改用一段精彩瞬間慢動作回放的影片，結果一開始很成功，後來球遠離攝影機以及球速變快的時候就追蹤不到了。
+結論：影片球速太快，排球太小(離攝影機太遠) 都會影響追蹤成功與否。
 
 
 
