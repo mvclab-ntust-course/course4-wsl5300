@@ -22,7 +22,7 @@
   * 根據規格裝PyTorch
   * 我是`pip3 install torch torchvision torchaudio`
 
-</br></br></br>
+</br></br>
 
 ### 實作方式-CLI
 * `yolo predict model=yolov8n-seg.pt source='/Users/wsl/work/mvc/week4/argoverse.mp4' imgsz=320 classes=2`
@@ -46,7 +46,7 @@
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2004.51.20%402x.png" width=800 ></div>
 </br></br>
 
-* __choose "show download code" & copy code chunk__
+* __choose `show download code` & copy code chunk__
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2004.52.48%402x.png" width=400 ></div>
 </br></br>
 
@@ -75,7 +75,7 @@
 </br>
 
 
-#### 排球比賽中的截圖(照片可以成功追蹤) &nbsp; &nbsp; &nbsp; &nbsp; 影片
+#### 排球比賽中的截圖(照片可以成功追蹤) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 影片
 
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/runs/detect/predict3/IMG_DC99C3FA3F11-1.jpeg" width=350 >
      <img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/ezgif-7-218a511bc4.gif" width=350 ></div>
