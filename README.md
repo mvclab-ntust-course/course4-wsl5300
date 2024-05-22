@@ -1,11 +1,14 @@
 # week4 : YOLOv8 Object Tracking (Cars) & Training
-</br></br></br>
+</br>
+
+#### 參考 [Ultralytics YOLOv8 Docs](https://docs.ultralytics.com/quickstart/#use-ultralytics-with-python), 實作物件追蹤( classes[2] = 'car' ).
+</br>
+
 ## (1/2) YOLOv8 Object Tracking (Cars)
 
 <div class="center"><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/ezgif-3-0c627c0921.gif" width=600 ></div>
 
-#### 參考 [Ultralytics YOLOv8 Docs](https://docs.ultralytics.com/quickstart/#use-ultralytics-with-python), 實作物件追蹤( classes[2] = 'car' ).
-
+</br></br></br>
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-20%20at%2015.06.49%402x.png" width=800 ></div>
 
 
@@ -34,52 +37,49 @@
 </br></br></br>
 
 ## (2/2) YOLOv8 Training
+</br>
 
 ### Preparing Our Dataset
 
-* 在roboflow選擇關鍵字為`volleyball`的dataset。
+* __在roboflow選擇關鍵字為`volleyball`的dataset。__
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2004.51.20%402x.png" width=800 ></div>
 </br></br>
 
-* choose "show download code" & copy code chunk
+* __choose "show download code" & copy code chunk__
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2004.52.48%402x.png" width=400 ></div>
 </br></br>
 
-* 參考[train-yolov8-object-detection-on-custom-dataset.ipynb](https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/train-yolov8-object-detection-on-custom-dataset.ipynb#scrollTo=jC4EwNJCl8cr)，使用colab作為訓練環境。
+* __參考[train-yolov8-object-detection-on-custom-dataset.ipynb](https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/train-yolov8-object-detection-on-custom-dataset.ipynb#scrollTo=jC4EwNJCl8cr)，使用colab作為訓練環境。__
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2004.56.47%402x.png" width=800 ></div>
 </br></br></br>
 
 ### Training
-  
-* 貼上由roboflow載入dataset的程式碼片段 & 執行
+</br>
+
+* __貼上由roboflow載入dataset的程式碼片段 & 執行__
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2004.59.50%402x.png" width=800 ></div>
 </br></br>
 
-* 訓練完成 & 模型結果存於`/content/runs/detect/train/weights/best.pt`
+* __訓練完成 & 模型結果存於`/content/runs/detect/train/weights/best.pt`__
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2005.02.01%402x.png" width=800 ></div>
 </br></br>
 
-* test的準確率
+* __測試集的準確率__
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2005.03.00%402x.png" width=400 >
      <img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/CleanShot%202024-05-22%20at%2005.03.23%402x.png" width=400 ></div>
 </br></br></br>
 
 ### Predict 
+</br>
 
-#### PNG
 
-* 排球比賽中的截圖(照片可以成功追蹤)
+#### 排球比賽中的截圖(照片可以成功追蹤)        影片
 
-<div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/runs/detect/predict3/IMG_DC99C3FA3F11-1.jpeg" width=350 ></div>
+<div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/runs/detect/predict3/IMG_DC99C3FA3F11-1.jpeg" width=350 >
+     <img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/ezgif-7-218a511bc4.gif" width=350 ></div>
 </br></br>
 
-#### Video
-
-* 發球
-
-<div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/ezgif-7-218a511bc4.gif" width=350 ></div>
-
-* 網前，近距離
+#### 網前，近距離
 
 <div><img src="https://github.com/mvclab-ntust-course/course4-wsl5300/blob/main/photos/ezgif-3-4a4d719c9d.gif" width=800 ></div>
 
